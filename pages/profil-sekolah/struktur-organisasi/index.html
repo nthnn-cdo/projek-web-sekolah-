@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Organisasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .right {
+            align-self: start;
+            margin-top: -30px;
+        }
+
+        .bottom {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: -350px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="img/akuganteng.jpg" alt="Struktur Organisasi Kiri">
+        </div>
+        <div class="box right">
+            <img src="img/0001-1024x622.jpg" alt="Struktur Organisasi Kanan">
+        </div>
+        <div class="box bottom">
+            <img src="img/akuganteng2.jpg" alt="Struktur Organisasi Bawah">
+        </div>
+    </div>
+
+</body>
+</html>
