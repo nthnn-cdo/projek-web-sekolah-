@@ -9,6 +9,38 @@
     <meta content="" name="description">
     <link href="/img/favicon-32x32.png" rel="icon">
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .cont {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: auto;
+        }
+        .logo {
+            width: 150px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -100,9 +132,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="/" class="nav-item nav-link active">Beranda</a>
+                <a href="/" class="nav-item nav-link">Beranda</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Sekolah</a>
+                    <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Profil Sekolah</a>
                     <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
                         <a href="/pages/profil-sekolah/struktur-organisasi/" class="dropdown-item">Struktur Organisasi</a>
                         <a href="/pages/profil-sekolah/pimpinan/index.html" class="dropdown-item">Pimpinan</a>
@@ -149,41 +181,8 @@
                 </nav>
             </div>
         </div>
-
-<style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-        }
-        .cont {
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            margin: auto;
-        }
-        .logo {
-            width: 150px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        h2 {
-            color: #0056b3;
-        }
-        ul {
-            text-align: left;
-            display: inline-block;
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-    </style>
 </head>
-<body>
+
     <div class="cont">
         <img src="/img/Angkasa.png" alt="Logo SMK Angkasa 1" class="logo">
         <h2>Visi</h2>
@@ -197,7 +196,6 @@
         </ul>
     </div>
 
-</body>
 <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">

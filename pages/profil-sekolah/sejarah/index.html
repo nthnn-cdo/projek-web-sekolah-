@@ -7,8 +7,63 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
     <link href="/img/favicon-32x32.png" rel="icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .cont {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #004080;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .text, .image-container {
+            width: 48%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: auto;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .text, .image-container {
+                width: 100%;
+            }
+        }
+    </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,9 +155,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="/" class="nav-item nav-link active">Beranda</a>
+                <a href="/" class="nav-item nav-link">Beranda</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Sekolah</a>
+                    <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Profil Sekolah</a>
                     <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
                         <a href="/pages/profil-sekolah/struktur-organisasi/" class="dropdown-item">Struktur Organisasi</a>
                         <a href="/pages/profil-sekolah/pimpinan/index.html" class="dropdown-item">Pimpinan</a>
@@ -150,63 +205,6 @@
             </div>
         </div>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .cont {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            color: #004080;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .text, .image-container {
-            width: 48%;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 0 auto;
-        }
-        .logo {
-            display: block;
-            margin: 20px auto;
-            width: 150px;
-            height: auto;
-        }
-        p {
-            text-align: justify;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .content {
-                flex-direction: column;
-            }
-            .text, .image-container {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
     <div class="cont">
         <h1>Sejarah SMK Angkasa</h1>
         <div class="content">
@@ -237,9 +235,7 @@
             </div>
         </div>
     </div>
-</body>
 
-</body>
 <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
@@ -323,7 +319,5 @@
 
 <script src="js/main.js"></script>
 </body>
-
-</html>
 
 </html>
